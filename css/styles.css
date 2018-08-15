@@ -12,6 +12,36 @@ header a, header li {
 
 }
 
+section#intro-header {
+  background-image: url(../images/landscape.jpg);
+  background-size: cover;
+}
+
+
+section#intro-header .wrap-headline {
+  position: relative;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
+section#intro-header h1,
+section#intro-header h2 {
+  color: #FFF;
+}
+
+section#intro-header h2 {
+  font-size: 1.5rem;
+}
+
+section#intro-header hr {
+  width: 10%;
+}
+
+section#intro-header .btn-default {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+}
+
 .nowrap {
 	white-space: nowrap;
 }
