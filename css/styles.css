@@ -92,6 +92,20 @@ section#features .feature {
 }
 
 
+section#newsletter {
+  border-top: 1px solid #E0E0E0;
+  padding-top: 3.2em;
+  margin-top: 2em;
+}
+section#newsletter h4 {
+  padding: 1em;
+}
+section#newsletter form {
+  padding: 1em;
+  margin-top: 2em;
+  margin-bottom: 5.5em;
+}
+
 
 
 footer {
@@ -156,4 +170,24 @@ section#pricing tbody .info {
 }
 section#pricing tbody .danger {
   background-color: #EB6379;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section#contact form {
+  padding-top: 9rem;
+  padding-bottom: 3rem;
 }
