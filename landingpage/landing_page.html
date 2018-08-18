@@ -6,13 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
 
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-  <!-- Fontawesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css" />
   <title>Landing page</title>
 </head>
 
@@ -41,7 +38,23 @@
           <h2 class="text-center">You ask, we do</h2>
           <hr />
           <ul class="list-inline list-unstyled text-center">
-            <li><a class="btn btn-default btn-lg" href="#" role="button">Sign in</a></li>
+
+            <form id="signin" class="form-inline text-center hidden-element">
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-addon">@</div>
+                  <input type="text" class="form-control" id="signin-email" placeholder="Email">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-addon">*</div>
+                  <input type="password" class="form-control" id="signin-password" placeholder="Password">
+                </div>
+              </div>
+              <button type="submit" class="btn btn-default">Sign in</button>
+            </form>
+            <li><a id="sign-btn" class="btn btn-default btn-lg" href="#" role="button">Sign in</a></li>
             <li><a class="btn btn-primary btn-lg" href="#" role="button">Sign up</a></li>
           </ul>
         </div>
@@ -55,7 +68,7 @@
       <!-- row 3 -->
       <div class="row">
         <div class="col-sm-6 col-xs-5">
-          <img src="/images/phone.jpg" class="img-responsive">
+          <img src="images/phone.jpg" class="img-responsive">
         </div>
         <div class="col-sm-6 col-xs-7">
           <h3>Lorem ipsum dolor sit amet</h3>
@@ -94,7 +107,9 @@
         <!-- row 6 -->
         <div class="row">
           <div class="col-xs-6 col-md-3">
-            <div class="feature">Feature</div>
+            <div class="feature">
+							<i class="fas fa-tablet-alt"></i>
+						</div>
           </div>
 
           <div class="col-xs-6 col-md-3">
@@ -205,62 +220,57 @@ block">Purchase</a></td>
         <button type="submit" class="btn btn-primary">Join  
 now!</button>
       </form>
-    </section <footer>
-    <div class="container">
-      <div class="col-sm-2">
-        <img src="/images/logo_mouse.png" class="img-responsive">
-      </div>
-      <div class="col-sm-2">
-        <h5>The company</h5>
-        <ul class="list-unstyled">
-          <li><a href="#">Documentation</a></li>
-          <li><a href="#">Packt publisher</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-      <div class="col-sm-2">
-        <h5>Social</h5>
-        <ul class="list-unstyled">
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-      </div>
-      <div class="col-sm-2">
-        <h5>Support</h5>
-        <ul class="list-unstyled">
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Privacy police</a></li>
-          <li><a href="#">Terms & conditions</a></li>
-          <li><a href="#">Help desk</a></li>
-        </ul>
-      </div>
-      <div class="col-sm-4">
-        <address>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="col-sm-2">
+          <img src="images/logo_mouse.png" class="img-responsive">
+        </div>
+        <div class="col-sm-2">
+          <h5>The company</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Packt publisher</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <h5>Social</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <h5>Support</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy police</a></li>
+            <li><a href="#">Terms & conditions</a></li>
+            <li><a href="#">Help desk</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <address>
         <strong>Name, Inc.</strong>
         Address line 1<br>
         Address line 2<br>
         <abbr title="Phone">P:</abbr> (123) 456-7890
       </address>
+        </div>
       </div>
-    </div>
     </footer>
 
 
 
     </div>
 
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-    <script src="/js/scripts.js" charset="utf-8">
-    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

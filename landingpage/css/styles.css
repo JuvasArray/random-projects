@@ -139,7 +139,7 @@ footer a:hover {
   text-decoration: none;
   color: #FFF;
 }
-
+i
 
 
 
@@ -173,9 +173,9 @@ section#pricing tbody .danger {
 }
 
 
-
-
-
+section#pricing .center-block {
+  width: 90%
+}
 
 
 
@@ -190,4 +190,10 @@ section#pricing tbody .danger {
 section#contact form {
   padding-top: 9rem;
   padding-bottom: 3rem;
+}
+
+
+
+.hidden-element {
+  display: none;
 }
