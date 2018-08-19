@@ -1,0 +1,23 @@
+{
+  "name": "random-projects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuvasArray/random-projects.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuvasArray/random-projects/issues"
+  },
+  "homepage": "https://github.com/JuvasArray/random-projects#readme",
+  "dependencies": {
+    "bootstrap3": "^3.3.5",
+    "jquery": "^3.3.1"
+  }
+}
