@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/JuvasArray/random-projects#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.2.0",
     "bootstrap3": "^3.3.5",
+    "fontawesome": "^4.7.2",
     "jquery": "^3.3.1"
   }
 }
